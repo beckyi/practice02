@@ -11,8 +11,23 @@ public class ArrayParameter {
 	}
 
 	static void replaceSpace( char a[] ) {
+//		String input = new String(a,0,a.length);
+//		input.replaceAll(" ",",");
+//		System.out.println(input);
+		
+		for(int k=0; k < a.length; k++){
+			if(a[k]==' '){
+				a[k]=',';
+			}
+		}
+		
 	}
 
 	static void printCharArray( char a[] ) {
+		for(int j=0; j<a.length;j++){
+			System.out.print(a[j]);
+		}
+		System.out.println("");
+			
 	}
 }
